@@ -1,0 +1,9 @@
+:root {
+  /* color */
+  --color-almost-white: hsl(0, 0%, 98%);
+  --color-midium-grey: hsl(0, 0%, 41%);
+  --color-almost-black: hsl(0, 0%, 8%);
+
+  /* font size */
+  --font-size: 18px;
+}
