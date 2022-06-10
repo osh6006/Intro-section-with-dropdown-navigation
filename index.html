@@ -11,107 +11,91 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
+    <span class="login active">
+      <a href="#">Register</a>
+    </span>
+    <span class="login">
+      <a href="#">Login</a>
+    </span>
     <section id="navBar">
-      <div class="navBar__logo">
-        <img src="/images/logo.svg" alt="" />
-      </div>
-      <div class="navBar__menus">
-        <ul>
-          <li>
-            <a href="#">Features</a>
-            <ul>
-              <li>
-                <a href="#"
-                  ><img src="/images/icon-todo.svg" alt="icon-todo" />Todo
-                  List</a
+      <div class="navBar__logo"><img src="/images/logo.svg" alt="" /></div>
+      <nav>
+        <ul class="navBar__menus">
+          <li class="dropdown">
+            <div class="dropdown-menu">
+              Features
+              <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            </div>
+            <div class="dropdown-content fetures">
+              <a href="#">
+                <img src="/images/icon-todo.svg" alt="icon-todo" /><span
+                  >Todo List</span
                 >
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="/images/icon-calendar.svg"
-                    alt="icon-calendar"
-                  />Calender</a
+              </a>
+              <a href="#">
+                <img src="/images/icon-calendar.svg" alt="icon-calendar" /><span
+                  >Calender</span
                 >
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="/images/icon-reminders.svg"
-                    alt="icon-reminders"
-                  />Reminders</a
+              </a>
+              <a href="#">
+                <img
+                  src="/images/icon-reminders.svg"
+                  alt="icon-reminders"
+                /><span>Reminders</span>
+              </a>
+              <a href="#">
+                <img src="/images/icon-planning.svg" alt="icon-planning" /><span
+                  >Planning</span
                 >
-              </li>
-              <li>
-                <a href="#"
-                  ><img
-                    src="/images/icon-planning.svg"
-                    alt="icon-planning"
-                  />Planning</a
-                >
-              </li>
-            </ul>
+              </a>
+            </div>
           </li>
-          <li>
-            <a href="#">Company</a>
-            <ul>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+          <li class="dropdown">
+            <div class="dropdown-menu">
+              Company
+              <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" />
+            </div>
+            <div class="dropdown-content company">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
           </li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <div class="dropdown-menu">Careers</div>
+          </li>
+          <li class="dropdown">
+            <div class="dropdown-menu">About</div>
+          </li>
         </ul>
-      </div>
-      <div class="navBar__login">
-        <button>Login</button>
-        <button>Register</button>
-      </div>
+      </nav>
     </section>
     <section id="contents">
-      <div class="contents__title">Make remote work</div>
-      <div class="contents__description">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
+      <div class="contents__left_column">
+        <div class="contents__title">Make <br />remote work</div>
+        <div class="contents__description">
+          Get your team in sync, no matter your location. <br />Streamline
+          processes, create team rituals, and <br />watch productivity soar.
+        </div>
+        <div class="contents__buttons">
+          <span class="learn_btn">Learn more</span>
+        </div>
+        <div class="contents__company">
+          <img src="images/client-databiz.svg" alt="client-databiz" />
+          <img src="images/client-audiophile.svg" alt="client-audiophile" />
+          <img src="images/client-meet.svg" alt="client-meet" />
+          <img src="images/client-maker.svg" alt="client-maker" />
+        </div>
       </div>
-      <div class="contents__buttons">Learn more</div>
-      <div class="contents__company">
-        <img src="images/client-databiz.svg" alt="client-databiz" />
-        <img src="images/client-audiophile.svg" alt="client-audiophile" />
-        <img src="images/client-meet.svg" alt="client-meet" />
-        <img src="images/client-maker.svg" alt="client-maker" />
-      </div>
-      <div class="contents__main_picture">
-        <img src="/images/image-hero-desktop.png" alt="hero" />
+      <div class="contents__right_column">
+        <span class="contents__main_picture">
+          <img src="/images/image-hero-desktop.png" alt="hero" />
+        </span>
       </div>
     </section>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>
